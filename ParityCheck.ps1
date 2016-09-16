@@ -101,7 +101,7 @@ $items = Get-ListItems -Context $context -ListTitle "CustomerCMDBSolutions"  $Cu
 
 try
 {
-
+    WriteReadLine()
     foreach($item in $items)
     {
           $log = $item["Solution_x0020_Name"]
@@ -118,6 +118,10 @@ finally
 {
     Write-Host ("The retrieval CMDB Solutions to text file $CMDBSolutionsFilePath is done!!!") -foreground "Green"
     $RetrievalCMDBSol.Close()
+}
+function WriteReadLine()
+{
+   Write-Host: "Welcome to the my site"
 }
 
 Get-LabSolutions
