@@ -1,6 +1,6 @@
 ##################################################################################
 # 
-#    Solution parity check (CMDB as source to validate) Functions
+#    Solution parity check (CMDB as source to validate means Production environment) Functions
 #    Date version:      5.1.2016
 # 
 ##################################################################################
