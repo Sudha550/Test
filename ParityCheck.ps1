@@ -1,11 +1,12 @@
 ##################################################################################
 # 
-#    Solution parity check (Production url as source to validate means Production environment) Functions
-#    Date version:      5.1.2016
+#    Solution parity check (Production urls as source to validate means Production environment) Functions
+#    Date version:      5.1.2016.01.
+# Welcome to learn Sharepoint Online PS
 # 
 ##################################################################################
 #     
-#    Script Contains
+#    Script Contains the following 
 # ------------------------------------------------------
 #    - Declaration of variable globally
 #    - Functions
