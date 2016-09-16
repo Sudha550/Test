@@ -1,6 +1,6 @@
 ##################################################################################
 # 
-#    Solution parity check (CMDB as source to validate means Production environment) Functions
+#    Solution parity check (Production url as source to validate means Production environment) Functions
 #    Date version:      5.1.2016
 # 
 ##################################################################################
@@ -9,12 +9,7 @@
 # ------------------------------------------------------
 #    - Declaration of variable globally
 #    - Functions
-#      a) Get-SPOContext - Connecting to the SPSite url with Credentials
-#      b) Get-ListItems -   Retrieving all the CMDB Solutions for the respective customer from the CMDB List and outputting the data to text file
-#      c) Get-LabSolutions - Retrieving all the Solutions and outputting the data to text file
-#      d) CompareLabandCMDBSolutions - Comparing CMDB with Lab Solutions and outputting the data to text file which CMDB Solutions not present in Lab Environment.
-
-
+#      
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
 
@@ -26,9 +21,9 @@ $AdditionalLabSolsinLabEnv="$path\AdditionalLabSolutionsinLabEnv" + ".txt"
 $LabSolutionsFilePath = "$path\LabSolutions" + ".txt"
 $RetrievalCMDBSol = [System.IO.StreamWriter] $CMDBSolutionsFilePath # Retrieval of CMDB Solutions
 $RetrievalLabSol = [System.IO.StreamWriter] $LabSolutionsFilePath # Retrieval of Lab Solutions
-$UserName = "mgmt7\ms-mla-paraja" 
-$Password = "Password123"
-$Url = "http://spsites.microsoft.com/sites/spodc"
+$UserName = "username" 
+$Password = "Passwordprovided"
+$Url = "siteurl"
 $cmpName = $env:computername 
 $CustomerCode = $cmpName.split("-")
 Write-Host "Customer Name is"$CustomerCode[1] -foreground "Magenta"
